@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  background-color: white;
+  border: 4px solid black;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell.x {
+  color: red;
+}
+
+.cell.o {
+  color: blue;
+}
+
+#statusMessage {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
